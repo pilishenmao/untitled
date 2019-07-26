@@ -6,8 +6,8 @@ def testDeleteGroup():
   browser = webdriver.Chrome(path)
   browser.get("https://www.fangcloud.com/auth/login")
   time.sleep(2)
-  browser.find_element_by_id("login").send_keys("656032372@qq.com")
-  browser.find_element_by_id("password").send_keys("pass123456")
+  browser.find_element_by_id("login").send_keys("xxxxxxxxxx@qq.com")
+  browser.find_element_by_id("password").send_keys("123456")
   browser.find_element_by_id("login_btn").click()
   time.sleep(3)
   #点击企业控制台
@@ -36,7 +36,6 @@ def isElementExist(browser, element):
 
 def deleteElements(browser):
   time.sleep(1)
-  # 明源
   browser.find_element_by_xpath("//div/ul/li/ul/li/div/i").click()
   time.sleep(1)
   browser.find_element_by_xpath("//div/ul/li/ul/li/ul/li/div/i").click()
